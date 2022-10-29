@@ -1,0 +1,15 @@
+#divVentas {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+}
+#tablaVentas {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
