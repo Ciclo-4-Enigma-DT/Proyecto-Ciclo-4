@@ -7,6 +7,7 @@ export function App(){
         <div className="App">
             <Header />
             <Ventas />
+            <ShopingCart></ShopingCart>
         </div>
     )
 }
