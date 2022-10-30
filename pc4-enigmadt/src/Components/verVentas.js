@@ -1,6 +1,8 @@
 import { Component } from "react"
 import "../Styles/ventas.css"
 
+
+
 var heading = ['idVenta', 'Usuario', 'Valor', 'Fecha']
 var body = [
     ['123', 'andres242002', '100.000', '24-07-2002'],
@@ -8,7 +10,7 @@ var body = [
     ['231', 'ryracala', '770.000', '16-10-2004'],
 ]
 
-export function Ventas() {
+function verVentas() {
     return (
         <>
             <div id="divVentas">
@@ -21,6 +23,7 @@ export function Ventas() {
         </>
     )
 }
+export default verVentas
 
 class Table extends Component {
     render() {
