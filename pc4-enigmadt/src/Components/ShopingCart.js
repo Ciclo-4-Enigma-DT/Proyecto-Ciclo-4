@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react'
 import { TYPES } from '../actions/shoppingActions';
 import { ShoppingInitialState, shoppingReducer } from '../reducers/shoppingReducers'
-import CartIem from './CartIem';
+import CartIem from './CartItem';
 import ProductItem from './ProductItem';
 
 const ShopingCart = () => {
