@@ -9,6 +9,7 @@ import Ventas from "./verVentas"
 export function App(){
     return(
         <div className="App">
+
             <Header /> 
 
             <BrowserRouter>
@@ -19,7 +20,8 @@ export function App(){
 
             </Routes>        
           </BrowserRouter>  
-           
+
+
         </div>
     )
 }
