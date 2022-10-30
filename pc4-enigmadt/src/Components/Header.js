@@ -27,7 +27,7 @@ export function Header() {
             <a className="nav-link active" aria-current="page" href="reporteventas">Reporte de Ventas</a>
             </li>   
           </ul> 
-          <a className="navbar-brand" href="agregarproducto"><FaCartPlus/></a>           
+          <a className="navbar-brand" href="carrito"><FaCartPlus/></a>           
         </div>
       </div>
     </nav>

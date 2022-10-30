@@ -1,7 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+
 function ProductoIndividual({producto}){
+
+
+    //let {id,name, precio}=data;,data,addToCart
+
     return(
         <div className='container'>
             <div className='row'>
@@ -14,9 +19,12 @@ function ProductoIndividual({producto}){
                     <li className='list-group-item'>{producto.precio}</li>
                     <li className='list-group-item'>{producto.detalle}</li>
                 </ul>
-                
+
+
                 &nbsp;
                 <button className='btn btn-danger'>Borrar</button>
+                &nbsp;
+                
                 <hr className='mt-4'/>
 
                 </div>
