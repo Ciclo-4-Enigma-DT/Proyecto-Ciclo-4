@@ -1,14 +1,21 @@
-import React, {useState} from 'react'
+import React, {useState, useNavigate} from 'react'
 import uniquid  from 'uniqid'
 import axios from 'axios'
+import Swal from 'sweetalert2'
+
 
 function AgregarProducto(){
 
+    //const navegar =useNavigate()
+     //Para volver atras al index
+     //const navegar =useNavigate()
 
     //Hooks
     const[nombre, setNombre]=useState('')
     const[precio, setPrecio]=useState('')
     const[detalle, setDetalle]=useState('')
+
+    
 
     function agreagarProducto(){
         var producto = {
@@ -21,7 +28,11 @@ function AgregarProducto(){
 
         axios.post('/api/producto/agregarproducto', producto)
         .then(res => {
-            alert(res.data)
+            console.log(res.data)
+            //alert(res.data)
+            
+            Swal.fire('Felicidades', 'El producto se creo con exito')
+            //navegar('/agregarproducto')
         })
         .then(err => {console.log(err)})
     }

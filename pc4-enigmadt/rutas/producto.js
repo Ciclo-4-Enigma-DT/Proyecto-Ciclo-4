@@ -62,14 +62,14 @@ router.post('/obtenerdataproducto', (req, res) =>{
     
 })
 
-/*
-//ruta para actualizar usuaurio
-router.post('/actualizausuario', (req, res) => {
+
+//ruta para actualizar producto
+router.post('/actualizaproducto', (req, res) => {
     
-    ModeloUsuario.findOneAndUpdate({idusuario:req.body.idusuario},{
+    ModeloProducto.findOneAndUpdate({idproducto:req.body.idproducto},{
         nombre: req.body.nombre,
-        email: req.body.email,
-        telefono: req.body.telefono
+        precio: req.body.precio,
+        detalle: req.body.detalle
     }, (err) =>{
         if(!err){
             res.send('Prodcuto actualizado correctamente')
@@ -80,6 +80,23 @@ router.post('/actualizausuario', (req, res) => {
     })
 
 })
-    */
+
+//ruta para borrar producto
+router.post('/borrarproducto', (req, res) => {
+    
+    ModeloProducto.findOneAndDelete({idproducto:req.body.idproducto}, (err) => {
+        if(!err){
+            res.send('Prodcuto borrado correctamente')
+        }else{
+            res.send(err)
+        }
+
+
+    })
+
+})
+
+
+    
 
 
