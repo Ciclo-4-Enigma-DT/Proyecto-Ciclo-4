@@ -17,6 +17,7 @@ export function App(){
             <BrowserRouter>
             <Routes>
               <Route path='/' element={<ListaProductos/>} exact></Route>
+              <Route path='/listaproductos' element={<ListaProductos/>} exact></Route>
               <Route path='/agregarproducto' element={<AgregarProducto/>} exact></Route>
               <Route path='/editarproducto/:idproducto' element={<EditarProducto/>}exact></Route>
               <Route exact path="/reporteventas" element={<Ventas/>}></Route>   

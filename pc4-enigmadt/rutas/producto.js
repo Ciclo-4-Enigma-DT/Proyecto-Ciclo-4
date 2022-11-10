@@ -8,7 +8,8 @@ const eschemaproducto = new eschema({
     nombre: String,
     precio: String,
     detalle: String,
-    idproducto: String
+    idproducto: String,
+    cantidad: String
 })
 
 const ModeloProducto = mongoose.model('producto', eschemaproducto)
@@ -25,7 +26,9 @@ router.post('/agregarproducto', (req, res) => {
         nombre: req.body.nombre,
         precio: req.body.precio,
         detalle: req.body.detalle,
-        idproducto: req.body.idproducto
+        idproducto: req.body.idproducto,
+        cantidad: req.body.cantidad
+        
     })
 
     nuevoproducto.save(function(err){
@@ -69,7 +72,8 @@ router.post('/actualizaproducto', (req, res) => {
     ModeloProducto.findOneAndUpdate({idproducto:req.body.idproducto},{
         nombre: req.body.nombre,
         precio: req.body.precio,
-        detalle: req.body.detalle
+        detalle: req.body.detalle,
+        cantidad: req.body.cantidad
     }, (err) =>{
         if(!err){
             res.send('Prodcuto actualizado correctamente')

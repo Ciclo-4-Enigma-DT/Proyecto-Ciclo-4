@@ -18,14 +18,17 @@ export function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Lista de Productos</a>
+              <a className="nav-link active" aria-current="page" href="/listaproductos">Lista de Productos</a>
             </li>
             <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="agregarproducto">Agregar Producto</a>
             </li>       
             <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="productosdisponibles">Productos disponibles</a>
+            </li>
+            <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="reporteventas">Reporte de Ventas</a>
-            </li>   
+            </li>    
           </ul> 
           <a className="navbar-brand" href="carrito"><FaCartPlus/></a>           
         </div>
