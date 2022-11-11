@@ -6,6 +6,7 @@ import ListaProductos from "./ListaProductos"
 import Ventas from "./verVentas"
 import Carrito from './ShopingCart';
 import EditarProducto from "./EditarProducto"
+import ProductosDisponibles from "./ProductosDisponibles"
 
 
 export function App(){
@@ -23,6 +24,7 @@ export function App(){
               <Route exact path="/reporteventas" element={<Ventas/>}></Route>   
               <Route exact path="/reporteventas" element={<Ventas/>}></Route>  
               <Route exact path="/carrito" element={<Carrito/>}></Route> 
+              <Route path='/productosdisponibles' element={<ProductosDisponibles/>} exact></Route>
             </Routes>        
           </BrowserRouter>  
           
